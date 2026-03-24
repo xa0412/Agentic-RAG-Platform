@@ -1,7 +1,5 @@
 from langchain_core.prompts import ChatPromptTemplate
 
-# --- Prompt 1: Answer Generation ---
-# Given retrieved documents + the question, generate a grounded answer
 GENERATE_PROMPT = ChatPromptTemplate.from_messages([
     (
         "system",
@@ -16,9 +14,6 @@ Context documents:
     ("human", "{question}"),
 ])
 
-
-# --- Prompt 2: Answer Grader ---
-# Checks if the generated answer actually addresses the question
 ANSWER_GRADER_PROMPT = ChatPromptTemplate.from_messages([
     (
         "system",
