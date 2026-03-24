@@ -1,0 +1,26 @@
+# Environment variables — NEVER commit secrets
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+
+# GCP service account keys — NEVER commit
+*.json
+!package.json
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

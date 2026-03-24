@@ -1,0 +1,20 @@
+# Exclude everything in .gitignore
+.gcloudignore
+.gitignore
+
+# Virtual environment — NEVER upload, Cloud Build installs from requirements.txt
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Local env file — secrets are passed via --set-env-vars instead
+.env
+
+# IDE
+.vscode/
+.idea/
